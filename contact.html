@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo"><a href="./index.html">The Chronicles <br> of Riddick</a></div>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle">
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./chronicles.html">Chronicles</a></li>
+            <li class="services">
+                <a href="./projects.html">Projects</a>
+                <!-- DROPDOWN MENU -->
+                <ul class="dropdown">
+                    <li><a href="/">Project 1</a></li>
+                    <li><a href="/">Project 2</a></li>
+                    <li><a href="/">Project 3</a></li>
+                    <li><a href="/">Project 4</a></li>
+                    <li><a href="/">Project 5</a></li>
+                </ul>
+            </li>
+            <li><a href="./resources.html">Resources</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+<div class="main">
+<p><br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit aliquid architecto eum dicta repellat vitae sapiente nostrum, enim soluta hic eius incidunt. Magnam, explicabo? Enim aliquam animi dolorum est iure.<br><br></p>
+
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="inquirer_name">
+
+    <label for="purpose">Reason for Contact:</label>
+    <select id="purpose" name="contact_purpose">
+        <option value="Inquiry">Inquiry</option>
+        <option value="Suggestion">Suggestion</option>
+        <option value="Job-Offer">Job Offer</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message_field"></textarea>
+
+    <label for="contact-email">Your Email:</label>
+    <input type="email" id="contact-email" name="contact_email">
+
+    <label for="confirmation">Proceed:</label>
+    <input type="checkbox" id="confirmation" name="confirmation_checkbox">
+
+    <button type="submit">Submit Message</button>
+
+    <button type="reset">Reset</button>
+</form>
+</div>
+</body>
+</html>
